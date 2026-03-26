@@ -104,6 +104,43 @@ def get_news_score(text):
             score += 2
 
     return score
+def fetch_news():
+    try:
+        new_items = []
+
+        # 🔥 TEMP FALLBACK DATA (FOR TESTING)
+        if True:
+            new_items.append({
+                "source": "TEST",
+                "title": "NIFTY Market Breakout Expected Today",
+                "summary": "Market showing strong bullish momentum",
+                "link": "https://example.com",
+                "published": "",
+                "timestamp": "",
+                "score": 8,
+                "impact": "HIGH",
+                "sentiment": 0.75,
+                "sentiment_label": "bullish"
+            })
+
+            new_items.append({
+                "source": "TEST",
+                "title": "Fed Signals Possible Rate Hike",
+                "summary": "Global markets may react negatively",
+                "link": "https://example.com",
+                "published": "",
+                "timestamp": "",
+                "score": 7,
+                "impact": "HIGH",
+                "sentiment": -0.6,
+                "sentiment_label": "bearish"
+            })
+
+        return new_items
+
+    except Exception as e:
+        print("Error:", e)
+        return []
 
 
 def get_impact(score):
