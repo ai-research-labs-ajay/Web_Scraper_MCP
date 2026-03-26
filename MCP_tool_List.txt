@@ -1,0 +1,10 @@
+🔥 AVAILABLE MCP TOOLS
+Tool	Description
+get_market_news	          All news
+get_high_impact_news	    Only HIGH impact
+get_bullish_news	        Bullish news
+get_bearish_news	        Bearish news
+get_trading_signals	      BUY/SELL/HOLD
+get_intraday_alerts	High  impact alerts
+get_fii_dii_sentiment    	FII/DII news
+get_sources	All sources
